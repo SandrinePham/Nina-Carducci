@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "compression": "^1.8.0"
+  },
+  "devDependencies": {
+    "purgecss": "^4.0.0",
+    "terser": "^5.39.0"
+  },
+  "scripts": {
+    "build": "purgecss --css assets/style.css --content ./index.html --output ./dist && npm run minify-js",
+    "minify-js": "terser assets/scripts.js -o dist/js/scripts.min.js && terser assets/maugallery.js -o dist/js/maugallery.min.js"
+  }
+}
