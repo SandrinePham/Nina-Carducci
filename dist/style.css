@@ -408,4 +408,5 @@ input[type="submit"] {
   width: 100%;
   height: auto;
   max-width: 100%; /* Empêche l'image d'être trop large */
+  aspect-ratio: 2 / 1;
 }
