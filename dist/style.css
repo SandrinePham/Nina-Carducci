@@ -5,6 +5,10 @@ body {
 * {
   font-family: "Inter";
   font-style: normal;
+  @font-face {
+    font-family: "Inter";
+    font-display: swap;
+  }
 }
 .top-header {
   background-color: white;
@@ -92,6 +96,11 @@ body {
 }
 .about-me__introduction {
   font-family: "Spectral";
+  @font-face {
+    font-family: "Spectral";
+    font-display: swap; 
+  }
+
   font-weight: 800;
   font-style: italic;
   width: 60%;
@@ -150,6 +159,11 @@ body {
 
 .quote {
   font-family: "Spectral";
+  @font-face {
+    font-family: "Spectral";
+    font-display: swap; 
+  }
+
   font-style: italic;
   width: 70%;
   margin: auto;
@@ -157,11 +171,21 @@ body {
 }
 .quote__text {
   font-family: Spectral;
+  @font-face {
+    font-family: "Spectral";
+    font-display: swap; 
+  }
+
   font-style: italic;
   font-weight: 300;
 }
 .quote__author {
   font-family: Spectral;
+  @font-face {
+    font-family: "Spectral";
+    font-display: swap; 
+  }
+
   font-weight: 800;
   font-size: 22px;
 }
@@ -378,4 +402,10 @@ input[type="submit"] {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.d-block.w-100 {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Empêche l'image d'être trop large */
 }
