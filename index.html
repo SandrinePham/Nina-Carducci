@@ -5,16 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Nina Carducci, photographe professionnelle spécialisée dans les portraits, les mariages et les événements en Île-de-France. Découvrez son portfolio et ses services."
+      content="Nina Carducci, photographe professionnelle spécialisée dans les portraits, les mariages et les événements à la Nouvelle-Aquitaine et à Bordeaux. Découvrez son portfolio et ses services."
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Photographer",
+        "name": "Nina Carducci",
+        "url": "https://www.ninacarducci.com",
+        "logo": "https://www.ninacarducci.com/assets/images/logo.jpg",
+        "image": "https://www.ninacarducci.com/assets/images/portfolio-image.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "addressRegion": "Nouvelle-Aquitaine",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33 5 56 67 78 89",
+        "openingHours": "Mo-Fr 10:00-19:00",
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo"]
+      }
+    </script>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nina Carducci - Photographe" />
+    <meta
+      name="twitter:description"
+      content="Photographe professionnelle spécialisée dans les portraits, mariages et événements, basée à Bordeaux. Découvrez son portfolio et ses services."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.ninacarducci.com/assets/images/portfolio-image.jpg"
+    />
+    <meta name="twitter:creator" content="@ninacarducci.photo" />
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Nina Carducci - Photographe" />
     <meta
       property="og:description"
-      content="Photographe spécialisée dans les portraits et événements, basée en Île-de-France. Découvrez mon portfolio."
+      content="Photographe spécialisée dans les portraits et événements, basée à la Nouvelle-Aquitaine, à Bordeaux. Découvrez mon portfolio."
     />
     <meta property="og:image" content="assets/images/portfolio-image.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.ninacarducci.com" />
+
+    <title>Nina Carducci - Photographe</title>
+
+    <!-- Preconnect pour améliorer le chargement des fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feuilles de style sans onload -->
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./dist/style.min.css" />
+
+    <!-- Fallback si JS désactivé -->
+    <noscript>
+      <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+      <link rel="stylesheet" href="./dist/style.css" />
+    </noscript>
+
+    <!-- Preload image principale -->
     <link
       rel="preload"
       as="image"
@@ -22,33 +81,15 @@
       type="image/webp"
     />
 
-    <title>Nina Carducci - Photographe</title>
-
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./dist/style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preload" href="./dist/style.css" as="style" />
-    <link rel="preload" href="./dist/js/scripts.min.js" as="script" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
-    />
-
-    <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
     <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      defer
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
       crossorigin="anonymous"
+      defer
     ></script>
 
+    <!-- Scripts JS -->
+    <script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
     <script defer src="./dist/js/maugallery.min.js"></script>
     <script defer src="./dist/js/scripts.min.js"></script>
   </head>
@@ -123,6 +164,8 @@
                   class="d-block w-100"
                   alt="Homme qui va au travail"
                   decoding="async"
+                  width="480"
+                  height="320"
                 />
               </picture>
             </div>
@@ -146,6 +189,8 @@
                   alt="Public d'un concert"
                   decoding="async"
                   loading="lazy"
+                  width="480"
+                  height="320"
                 />
               </picture>
             </div>
@@ -169,6 +214,8 @@
                   alt="Mariés qui s'embrassent"
                   loading="lazy"
                   decoding="async"
+                  width="480"
+                  height="320"
                 />
               </picture>
             </div>
@@ -198,7 +245,7 @@
         <div class="picture left">
           <img
             src="assets/images/nina.webp"
-            alt="Portrait de Nina Carducci, photographe professionnelle"
+            alt="Portrait professionnel de Nina Carducci, photographe spécialisée"
             loading="lazy"
             class="about-me__image"
           />
