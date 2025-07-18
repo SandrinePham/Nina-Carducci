@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "compression": "^1.8.0"
+    "compression": "^1.8.1"
   },
   "devDependencies": {
     "purgecss": "^4.0.0",
